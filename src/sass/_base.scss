@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$font: 'Montserrat', sans-serif;
+$blue: rgb(81, 99, 204);
+
+$container: 1200px;
+$mc: 0 auto;
+$pd: 0 15px;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+body {
+    background: url("../assets/img/art-narisovannyj-pejzazh-les-derevya-noch-svetlyachki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $font;
+}
+.container {
+    max-width: $container;
+    margin: $mc;
+    padding: $pd;
+}

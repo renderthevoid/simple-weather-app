@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  background: url("../assets/img/art-narisovannyj-pejzazh-les-derevya-noch-svetlyachki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container-input {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.input {
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input .form {
+  position: relative;
+  max-width: 1000px;
+}
+.input__value {
+  width: 100%;
+  padding: 10px 10px;
+  z-index: 1;
+  border-radius: 5px;
+  height: 50px;
+  display: block;
+}
+.input__submit {
+  z-index: 99;
+  position: absolute;
+  bottom: 0;
+  top: 8px;
+  right: 5px;
+  background-color: rgb(81, 99, 204);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 30px;
+  height: 35px;
+  text-transform: uppercase;
+}
+
+.weather {
+  color: rgb(81, 99, 204);
+}
+.weather__inner {
+  max-width: 60%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 25px;
+}
+.weather__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.weather__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5px;
+}
+.weather__date {
+  font-size: 20px;
+}
+.weather__temp {
+  font-weight: 700;
+  font-size: 75px;
+  margin-bottom: 10px;
+}
+.weather__main {
+  margin-bottom: 80px;
+}
+.weather__humidity {
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .container-input {
+    padding-bottom: 100px;
+  }
+  .container .input__submit {
+    padding: 5px 15px;
+  }
+  .weather__inner {
+    max-width: 80%;
+  }
+  .weather__info {
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .weather__name {
+    margin-bottom: 20px;
+  }
+}
